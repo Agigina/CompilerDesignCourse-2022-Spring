@@ -30,13 +30,13 @@ a {
   font-style: italic;
 }
 #hero-slides #header #logo:before {
-  content: "The";
+  content: "Compiler";
   text-transform: uppercase;
   font-weight: 100;
   margin-right: 0.4em;
 }
 #hero-slides #header #logo:after {
-  content: "Wall";
+  content: "Design";
   text-transform: uppercase;
   font-weight: 800;
 }
@@ -50,7 +50,7 @@ a {
 }
 #hero-slides #header #menu:before {
   font-size: 1.75vh;
-  content: "Play Demo";
+  content: "C Minus language";
   margin-right: 0.5em;
   text-transform: uppercase;
 }
@@ -302,7 +302,7 @@ a {
 }
 #hero-slides #footer #dribbble:before {
   display: inline;
-  content: "View original Dribbble";
+  content: "View on Github";
   font-size: 2vh;
   opacity: 0;
   transform: translate3D(-200px, 0, 0);
