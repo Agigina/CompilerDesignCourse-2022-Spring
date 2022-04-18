@@ -1,0 +1,339 @@
+,状态栈,移动栈,输入栈
+0,s0 ,# ,int IDENTIFIER ; 
+1,s0 s1 ,# int ,IDENTIFIER ; int IDENTIFIER ; 
+2,s0 ,# ,IDENTIFIER ; int IDENTIFIER ; 
+3,s0 s5 ,# typeSpecifier ,IDENTIFIER ; int IDENTIFIER ; 
+4,s0 s5 s9 ,# typeSpecifier IDENTIFIER ,; int IDENTIFIER ; 
+5,s0 s5 s9 s13 ,# typeSpecifier IDENTIFIER ; ,int IDENTIFIER ; 
+6,s0 ,# ,int IDENTIFIER ; 
+7,s0 s6 ,# declaration ,int IDENTIFIER ; 
+8,s0 s6 s1 ,# declaration int ,"IDENTIFIER ; int IDENTIFIER ( int IDENTIFIER , int IDENTIFIER , int IDENTIFIER ) "
+9,s0 s6 ,# declaration ,"IDENTIFIER ; int IDENTIFIER ( int IDENTIFIER , int IDENTIFIER , int IDENTIFIER ) "
+10,s0 s6 s5 ,# declaration typeSpecifier ,"IDENTIFIER ; int IDENTIFIER ( int IDENTIFIER , int IDENTIFIER , int IDENTIFIER ) "
+11,s0 s6 s5 s9 ,# declaration typeSpecifier IDENTIFIER ,"; int IDENTIFIER ( int IDENTIFIER , int IDENTIFIER , int IDENTIFIER ) "
+12,s0 s6 s5 s9 s13 ,# declaration typeSpecifier IDENTIFIER ; ,"int IDENTIFIER ( int IDENTIFIER , int IDENTIFIER , int IDENTIFIER ) "
+13,s0 s6 ,# declaration ,"int IDENTIFIER ( int IDENTIFIER , int IDENTIFIER , int IDENTIFIER ) "
+14,s0 s6 s6 ,# declaration declaration ,"int IDENTIFIER ( int IDENTIFIER , int IDENTIFIER , int IDENTIFIER ) "
+15,s0 s6 s6 s1 ,# declaration declaration int ,"IDENTIFIER ( int IDENTIFIER , int IDENTIFIER , int IDENTIFIER ) "
+16,s0 s6 s6 ,# declaration declaration ,"IDENTIFIER ( int IDENTIFIER , int IDENTIFIER , int IDENTIFIER ) "
+17,s0 s6 s6 s5 ,# declaration declaration typeSpecifier ,"IDENTIFIER ( int IDENTIFIER , int IDENTIFIER , int IDENTIFIER ) "
+18,s0 s6 s6 s5 s9 ,# declaration declaration typeSpecifier IDENTIFIER ,"( int IDENTIFIER , int IDENTIFIER , int IDENTIFIER ) "
+19,s0 s6 s6 s5 s9 s14 ,# declaration declaration typeSpecifier IDENTIFIER ( ,"int IDENTIFIER , int IDENTIFIER , int IDENTIFIER ) "
+20,s0 s6 s6 s5 s9 s14 s1 ,# declaration declaration typeSpecifier IDENTIFIER ( int ,"IDENTIFIER , int IDENTIFIER , int IDENTIFIER ) "
+21,s0 s6 s6 s5 s9 s14 ,# declaration declaration typeSpecifier IDENTIFIER ( ,"IDENTIFIER , int IDENTIFIER , int IDENTIFIER ) "
+22,s0 s6 s6 s5 s9 s14 s30 ,# declaration declaration typeSpecifier IDENTIFIER ( typeSpecifier ,"IDENTIFIER , int IDENTIFIER , int IDENTIFIER ) "
+23,s0 s6 s6 s5 s9 s14 s30 s47 ,# declaration declaration typeSpecifier IDENTIFIER ( typeSpecifier IDENTIFIER ,", int IDENTIFIER , int IDENTIFIER ) "
+24,s0 s6 s6 s5 s9 s14 ,# declaration declaration typeSpecifier IDENTIFIER ( ,", int IDENTIFIER , int IDENTIFIER ) "
+25,s0 s6 s6 s5 s9 s14 s32 ,# declaration declaration typeSpecifier IDENTIFIER ( para ,", int IDENTIFIER , int IDENTIFIER ) "
+26,s0 s6 s6 s5 s9 s14 s32 s49 ,"# declaration declaration typeSpecifier IDENTIFIER ( para , ","int IDENTIFIER , int IDENTIFIER ) "
+27,s0 s6 s6 s5 s9 s14 s32 s49 s1 ,"# declaration declaration typeSpecifier IDENTIFIER ( para , int ","IDENTIFIER , int IDENTIFIER ) "
+28,s0 s6 s6 s5 s9 s14 s32 s49 ,"# declaration declaration typeSpecifier IDENTIFIER ( para , ","IDENTIFIER , int IDENTIFIER ) "
+29,s0 s6 s6 s5 s9 s14 s32 s49 s30 ,"# declaration declaration typeSpecifier IDENTIFIER ( para , typeSpecifier ","IDENTIFIER , int IDENTIFIER ) "
+30,s0 s6 s6 s5 s9 s14 s32 s49 s30 s47 ,"# declaration declaration typeSpecifier IDENTIFIER ( para , typeSpecifier IDENTIFIER ",", int IDENTIFIER ) "
+31,s0 s6 s6 s5 s9 s14 s32 s49 ,"# declaration declaration typeSpecifier IDENTIFIER ( para , ",", int IDENTIFIER ) "
+32,s0 s6 s6 s5 s9 s14 s32 s49 s32 ,"# declaration declaration typeSpecifier IDENTIFIER ( para , para ",", int IDENTIFIER ) "
+33,s0 s6 s6 s5 s9 s14 s32 s49 s32 s49 ,"# declaration declaration typeSpecifier IDENTIFIER ( para , para , ",int IDENTIFIER ) 
+34,s0 s6 s6 s5 s9 s14 s32 s49 s32 s49 s1 ,"# declaration declaration typeSpecifier IDENTIFIER ( para , para , int ",IDENTIFIER ) { 
+35,s0 s6 s6 s5 s9 s14 s32 s49 s32 s49 ,"# declaration declaration typeSpecifier IDENTIFIER ( para , para , ",IDENTIFIER ) { 
+36,s0 s6 s6 s5 s9 s14 s32 s49 s32 s49 s30 ,"# declaration declaration typeSpecifier IDENTIFIER ( para , para , typeSpecifier ",IDENTIFIER ) { 
+37,s0 s6 s6 s5 s9 s14 s32 s49 s32 s49 s30 s47 ,"# declaration declaration typeSpecifier IDENTIFIER ( para , para , typeSpecifier IDENTIFIER ",) { int IDENTIFIER ; 
+38,s0 s6 s6 s5 s9 s14 s32 s49 s32 s49 ,"# declaration declaration typeSpecifier IDENTIFIER ( para , para , ",) { int IDENTIFIER ; 
+39,s0 s6 s6 s5 s9 s14 s32 s49 s32 s49 s32 ,"# declaration declaration typeSpecifier IDENTIFIER ( para , para , para ",) { int IDENTIFIER ; 
+40,s0 s6 s6 s5 s9 s14 s32 s49 s32 s49 ,"# declaration declaration typeSpecifier IDENTIFIER ( para , para , ",) { int IDENTIFIER ; 
+41,s0 s6 s6 s5 s9 s14 s32 s49 s32 s49 s73 ,"# declaration declaration typeSpecifier IDENTIFIER ( para , para , formalParaList ",) { int IDENTIFIER ; 
+42,s0 s6 s6 s5 s9 s14 s32 s49 ,"# declaration declaration typeSpecifier IDENTIFIER ( para , ",) { int IDENTIFIER ; 
+43,s0 s6 s6 s5 s9 s14 s32 s49 s73 ,"# declaration declaration typeSpecifier IDENTIFIER ( para , formalParaList ",) { int IDENTIFIER ; 
+44,s0 s6 s6 s5 s9 s14 ,# declaration declaration typeSpecifier IDENTIFIER ( ,) { int IDENTIFIER ; 
+45,s0 s6 s6 s5 s9 s14 s31 ,# declaration declaration typeSpecifier IDENTIFIER ( formalParaList ,) { int IDENTIFIER ; 
+46,s0 s6 s6 s5 s9 s14 s31 s48 ,# declaration declaration typeSpecifier IDENTIFIER ( formalParaList ) ,{ int IDENTIFIER ; 
+47,s0 s6 s6 ,# declaration declaration ,{ int IDENTIFIER ; 
+48,s0 s6 s6 s8 ,# declaration declaration declareFunction ,{ int IDENTIFIER ; 
+49,s0 s6 s6 s8 s11 ,# declaration declaration declareFunction { ,int IDENTIFIER ; 
+50,s0 s6 s6 s8 s11 s1 ,# declaration declaration declareFunction { int ,IDENTIFIER ; int IDENTIFIER ; 
+51,s0 s6 s6 s8 s11 ,# declaration declaration declareFunction { ,IDENTIFIER ; int IDENTIFIER ; 
+52,s0 s6 s6 s8 s11 s19 ,# declaration declaration declareFunction { typeSpecifier ,IDENTIFIER ; int IDENTIFIER ; 
+53,s0 s6 s6 s8 s11 s19 s42 ,# declaration declaration declareFunction { typeSpecifier IDENTIFIER ,; int IDENTIFIER ; 
+54,s0 s6 s6 s8 s11 s19 s42 s71 ,# declaration declaration declareFunction { typeSpecifier IDENTIFIER ; ,int IDENTIFIER ; 
+55,s0 s6 s6 s8 s11 ,# declaration declaration declareFunction { ,int IDENTIFIER ; 
+56,s0 s6 s6 s8 s11 s20 ,# declaration declaration declareFunction { declaration ,int IDENTIFIER ; 
+57,s0 s6 s6 s8 s11 ,# declaration declaration declareFunction { ,int IDENTIFIER ; 
+58,s0 s6 s6 s8 s11 s24 ,# declaration declaration declareFunction { statement ,int IDENTIFIER ; 
+59,s0 s6 s6 s8 s11 s24 s1 ,# declaration declaration declareFunction { statement int ,IDENTIFIER ; IDENTIFIER = INT ; 
+60,s0 s6 s6 s8 s11 s24 ,# declaration declaration declareFunction { statement ,IDENTIFIER ; IDENTIFIER = INT ; 
+61,s0 s6 s6 s8 s11 s24 s19 ,# declaration declaration declareFunction { statement typeSpecifier ,IDENTIFIER ; IDENTIFIER = INT ; 
+62,s0 s6 s6 s8 s11 s24 s19 s42 ,# declaration declaration declareFunction { statement typeSpecifier IDENTIFIER ,; IDENTIFIER = INT ; 
+63,s0 s6 s6 s8 s11 s24 s19 s42 s71 ,# declaration declaration declareFunction { statement typeSpecifier IDENTIFIER ; ,IDENTIFIER = INT ; 
+64,s0 s6 s6 s8 s11 s24 ,# declaration declaration declareFunction { statement ,IDENTIFIER = INT ; 
+65,s0 s6 s6 s8 s11 s24 s20 ,# declaration declaration declareFunction { statement declaration ,IDENTIFIER = INT ; 
+66,s0 s6 s6 s8 s11 s24 ,# declaration declaration declareFunction { statement ,IDENTIFIER = INT ; 
+67,s0 s6 s6 s8 s11 s24 s24 ,# declaration declaration declareFunction { statement statement ,IDENTIFIER = INT ; 
+68,s0 s6 s6 s8 s11 s24 s24 s15 ,# declaration declaration declareFunction { statement statement IDENTIFIER ,= INT ; 
+69,s0 s6 s6 s8 s11 s24 s24 s15 s33 ,# declaration declaration declareFunction { statement statement IDENTIFIER = ,INT ; if ( IDENTIFIER > ( IDENTIFIER + IDENTIFIER ) ) 
+70,s0 s6 s6 s8 s11 s24 s24 s15 s33 s37 ,# declaration declaration declareFunction { statement statement IDENTIFIER = INT ,; if ( IDENTIFIER > ( IDENTIFIER + IDENTIFIER ) ) 
+71,s0 s6 s6 s8 s11 s24 s24 s15 s33 ,# declaration declaration declareFunction { statement statement IDENTIFIER = ,; if ( IDENTIFIER > ( IDENTIFIER + IDENTIFIER ) ) 
+72,s0 s6 s6 s8 s11 s24 s24 s15 s33 s39 ,# declaration declaration declareFunction { statement statement IDENTIFIER = primaryExpression ,; if ( IDENTIFIER > ( IDENTIFIER + IDENTIFIER ) ) 
+73,s0 s6 s6 s8 s11 s24 s24 s15 s33 ,# declaration declaration declareFunction { statement statement IDENTIFIER = ,; if ( IDENTIFIER > ( IDENTIFIER + IDENTIFIER ) ) 
+74,s0 s6 s6 s8 s11 s24 s24 s15 s33 s50 ,# declaration declaration declareFunction { statement statement IDENTIFIER = expression ,; if ( IDENTIFIER > ( IDENTIFIER + IDENTIFIER ) ) 
+75,s0 s6 s6 s8 s11 s24 s24 s15 s33 s50 s74 ,# declaration declaration declareFunction { statement statement IDENTIFIER = expression ; ,if ( IDENTIFIER > ( IDENTIFIER + IDENTIFIER ) ) 
+76,s0 s6 s6 s8 s11 s24 s24 ,# declaration declaration declareFunction { statement statement ,if ( IDENTIFIER > ( IDENTIFIER + IDENTIFIER ) ) 
+77,s0 s6 s6 s8 s11 s24 s24 s25 ,# declaration declaration declareFunction { statement statement assignStatement ,if ( IDENTIFIER > ( IDENTIFIER + IDENTIFIER ) ) 
+78,s0 s6 s6 s8 s11 s24 s24 ,# declaration declaration declareFunction { statement statement ,if ( IDENTIFIER > ( IDENTIFIER + IDENTIFIER ) ) 
+79,s0 s6 s6 s8 s11 s24 s24 s24 ,# declaration declaration declareFunction { statement statement statement ,if ( IDENTIFIER > ( IDENTIFIER + IDENTIFIER ) ) 
+80,s0 s6 s6 s8 s11 s24 s24 s24 s18 ,# declaration declaration declareFunction { statement statement statement if ,( IDENTIFIER > ( IDENTIFIER + IDENTIFIER ) ) 
+81,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 ,# declaration declaration declareFunction { statement statement statement if ( ,IDENTIFIER > ( IDENTIFIER + IDENTIFIER ) ) 
+82,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s52 ,# declaration declaration declareFunction { statement statement statement if ( IDENTIFIER ,> ( IDENTIFIER + IDENTIFIER ) ) 
+83,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 ,# declaration declaration declareFunction { statement statement statement if ( ,> ( IDENTIFIER + IDENTIFIER ) ) 
+84,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s56 ,# declaration declaration declareFunction { statement statement statement if ( primaryExpression ,> ( IDENTIFIER + IDENTIFIER ) ) 
+85,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s56 s65 ,# declaration declaration declareFunction { statement statement statement if ( primaryExpression > ,( IDENTIFIER + IDENTIFIER ) ) 
+86,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s56 ,# declaration declaration declareFunction { statement statement statement if ( primaryExpression ,( IDENTIFIER + IDENTIFIER ) ) 
+87,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s56 s84 ,# declaration declaration declareFunction { statement statement statement if ( primaryExpression operator ,( IDENTIFIER + IDENTIFIER ) ) 
+88,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s56 s84 s53 ,# declaration declaration declareFunction { statement statement statement if ( primaryExpression operator ( ,IDENTIFIER + IDENTIFIER ) ) 
+89,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s56 s84 s53 s52 ,# declaration declaration declareFunction { statement statement statement if ( primaryExpression operator ( IDENTIFIER ,+ IDENTIFIER ) ) 
+90,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s56 s84 s53 ,# declaration declaration declareFunction { statement statement statement if ( primaryExpression operator ( ,+ IDENTIFIER ) ) 
+91,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s56 s84 s53 s56 ,# declaration declaration declareFunction { statement statement statement if ( primaryExpression operator ( primaryExpression ,+ IDENTIFIER ) ) 
+92,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s56 s84 s53 s56 s58 ,# declaration declaration declareFunction { statement statement statement if ( primaryExpression operator ( primaryExpression + ,IDENTIFIER ) ) 
+93,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s56 s84 s53 s56 ,# declaration declaration declareFunction { statement statement statement if ( primaryExpression operator ( primaryExpression ,IDENTIFIER ) ) 
+94,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s56 s84 s53 s56 s84 ,# declaration declaration declareFunction { statement statement statement if ( primaryExpression operator ( primaryExpression operator ,IDENTIFIER ) ) 
+95,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s56 s84 s53 s56 s84 s52 ,# declaration declaration declareFunction { statement statement statement if ( primaryExpression operator ( primaryExpression operator IDENTIFIER ,) ) { 
+96,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s56 s84 s53 s56 s84 ,# declaration declaration declareFunction { statement statement statement if ( primaryExpression operator ( primaryExpression operator ,) ) { 
+97,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s56 s84 s53 s56 s84 s56 ,# declaration declaration declareFunction { statement statement statement if ( primaryExpression operator ( primaryExpression operator primaryExpression ,) ) { 
+98,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s56 s84 s53 s56 s84 ,# declaration declaration declareFunction { statement statement statement if ( primaryExpression operator ( primaryExpression operator ,) ) { 
+99,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s56 s84 s53 s56 s84 s96 ,# declaration declaration declareFunction { statement statement statement if ( primaryExpression operator ( primaryExpression operator expression ,) ) { 
+100,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s56 s84 s53 ,# declaration declaration declareFunction { statement statement statement if ( primaryExpression operator ( ,) ) { 
+101,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s56 s84 s53 s82 ,# declaration declaration declareFunction { statement statement statement if ( primaryExpression operator ( expression ,) ) { 
+102,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s56 s84 s53 s82 s95 ,# declaration declaration declareFunction { statement statement statement if ( primaryExpression operator ( expression ) ,) { IDENTIFIER = IDENTIFIER + ( IDENTIFIER * IDENTIFIER + INT ) ; 
+103,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s56 s84 ,# declaration declaration declareFunction { statement statement statement if ( primaryExpression operator ,) { IDENTIFIER = IDENTIFIER + ( IDENTIFIER * IDENTIFIER + INT ) ; 
+104,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s56 s84 s56 ,# declaration declaration declareFunction { statement statement statement if ( primaryExpression operator primaryExpression ,) { IDENTIFIER = IDENTIFIER + ( IDENTIFIER * IDENTIFIER + INT ) ; 
+105,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s56 s84 ,# declaration declaration declareFunction { statement statement statement if ( primaryExpression operator ,) { IDENTIFIER = IDENTIFIER + ( IDENTIFIER * IDENTIFIER + INT ) ; 
+106,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s56 s84 s96 ,# declaration declaration declareFunction { statement statement statement if ( primaryExpression operator expression ,) { IDENTIFIER = IDENTIFIER + ( IDENTIFIER * IDENTIFIER + INT ) ; 
+107,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 ,# declaration declaration declareFunction { statement statement statement if ( ,) { IDENTIFIER = IDENTIFIER + ( IDENTIFIER * IDENTIFIER + INT ) ; 
+108,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 ,# declaration declaration declareFunction { statement statement statement if ( expression ,) { IDENTIFIER = IDENTIFIER + ( IDENTIFIER * IDENTIFIER + INT ) ; 
+109,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 ,# declaration declaration declareFunction { statement statement statement if ( expression ) ,{ IDENTIFIER = IDENTIFIER + ( IDENTIFIER * IDENTIFIER + INT ) ; 
+110,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { ,IDENTIFIER = IDENTIFIER + ( IDENTIFIER * IDENTIFIER + INT ) ; 
+111,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER ,= IDENTIFIER + ( IDENTIFIER * IDENTIFIER + INT ) ; 
+112,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = ,IDENTIFIER + ( IDENTIFIER * IDENTIFIER + INT ) ; 
+113,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s34 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = IDENTIFIER ,+ ( IDENTIFIER * IDENTIFIER + INT ) ; 
+114,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = ,+ ( IDENTIFIER * IDENTIFIER + INT ) ; 
+115,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression ,+ ( IDENTIFIER * IDENTIFIER + INT ) ; 
+116,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s58 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression + ,( IDENTIFIER * IDENTIFIER + INT ) ; 
+117,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression ,( IDENTIFIER * IDENTIFIER + INT ) ; 
+118,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator ,( IDENTIFIER * IDENTIFIER + INT ) ; 
+119,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 s36 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator ( ,IDENTIFIER * IDENTIFIER + INT ) ; 
+120,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 s36 s52 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator ( IDENTIFIER ,* IDENTIFIER + INT ) ; 
+121,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 s36 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator ( ,* IDENTIFIER + INT ) ; 
+122,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 s36 s56 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator ( primaryExpression ,* IDENTIFIER + INT ) ; 
+123,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 s36 s56 s60 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator ( primaryExpression * ,IDENTIFIER + INT ) ; 
+124,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 s36 s56 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator ( primaryExpression ,IDENTIFIER + INT ) ; 
+125,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 s36 s56 s84 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator ( primaryExpression operator ,IDENTIFIER + INT ) ; 
+126,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 s36 s56 s84 s52 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator ( primaryExpression operator IDENTIFIER ,+ INT ) ; 
+127,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 s36 s56 s84 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator ( primaryExpression operator ,+ INT ) ; 
+128,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 s36 s56 s84 s56 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator ( primaryExpression operator primaryExpression ,+ INT ) ; 
+129,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 s36 s56 s84 s56 s58 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator ( primaryExpression operator primaryExpression + ,INT ) ; 
+130,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 s36 s56 s84 s56 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator ( primaryExpression operator primaryExpression ,INT ) ; 
+131,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 s36 s56 s84 s56 s84 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator ( primaryExpression operator primaryExpression operator ,INT ) ; 
+132,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 s36 s56 s84 s56 s84 s54 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator ( primaryExpression operator primaryExpression operator INT ,) ; } 
+133,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 s36 s56 s84 s56 s84 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator ( primaryExpression operator primaryExpression operator ,) ; } 
+134,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 s36 s56 s84 s56 s84 s56 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator ( primaryExpression operator primaryExpression operator primaryExpression ,) ; } 
+135,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 s36 s56 s84 s56 s84 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator ( primaryExpression operator primaryExpression operator ,) ; } 
+136,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 s36 s56 s84 s56 s84 s96 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator ( primaryExpression operator primaryExpression operator expression ,) ; } 
+137,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 s36 s56 s84 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator ( primaryExpression operator ,) ; } 
+138,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 s36 s56 s84 s96 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator ( primaryExpression operator expression ,) ; } 
+139,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 s36 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator ( ,) ; } 
+140,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 s36 s55 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator ( expression ,) ; } 
+141,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 s36 s55 s83 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator ( expression ) ,; } else 
+142,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator ,; } else 
+143,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 s39 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator primaryExpression ,; } else 
+144,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator ,; } else 
+145,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s39 s68 s85 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = primaryExpression operator expression ,; } else 
+146,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = ,; } else 
+147,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s50 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = expression ,; } else 
+148,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s15 s33 s50 s74 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { IDENTIFIER = expression ; ,} else { 
+149,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { ,} else { 
+150,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s25 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { assignStatement ,} else { 
+151,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { ,} else { 
+152,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s24 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { statement ,} else { 
+153,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s24 s46 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { statement statementChain ,} else { 
+154,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { ,} else { 
+155,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s105 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { statementChain ,} else { 
+156,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s98 s105 s108 ,# declaration declaration declareFunction { statement statement statement if ( expression ) { statementChain } ,else { IDENTIFIER = IDENTIFIER ; 
+157,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 ,# declaration declaration declareFunction { statement statement statement if ( expression ) ,else { IDENTIFIER = IDENTIFIER ; 
+158,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s99 ,# declaration declaration declareFunction { statement statement statement if ( expression ) block ,else { IDENTIFIER = IDENTIFIER ; 
+159,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s99 s106 ,# declaration declaration declareFunction { statement statement statement if ( expression ) block else ,{ IDENTIFIER = IDENTIFIER ; 
+160,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s99 s106 s43 ,# declaration declaration declareFunction { statement statement statement if ( expression ) block else { ,IDENTIFIER = IDENTIFIER ; 
+161,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s99 s106 s43 s15 ,# declaration declaration declareFunction { statement statement statement if ( expression ) block else { IDENTIFIER ,= IDENTIFIER ; 
+162,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s99 s106 s43 s15 s33 ,# declaration declaration declareFunction { statement statement statement if ( expression ) block else { IDENTIFIER = ,IDENTIFIER ; } 
+163,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s99 s106 s43 s15 s33 s34 ,# declaration declaration declareFunction { statement statement statement if ( expression ) block else { IDENTIFIER = IDENTIFIER ,; } while ( IDENTIFIER <= INT ) 
+164,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s99 s106 s43 s15 s33 ,# declaration declaration declareFunction { statement statement statement if ( expression ) block else { IDENTIFIER = ,; } while ( IDENTIFIER <= INT ) 
+165,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s99 s106 s43 s15 s33 s39 ,# declaration declaration declareFunction { statement statement statement if ( expression ) block else { IDENTIFIER = primaryExpression ,; } while ( IDENTIFIER <= INT ) 
+166,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s99 s106 s43 s15 s33 ,# declaration declaration declareFunction { statement statement statement if ( expression ) block else { IDENTIFIER = ,; } while ( IDENTIFIER <= INT ) 
+167,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s99 s106 s43 s15 s33 s50 ,# declaration declaration declareFunction { statement statement statement if ( expression ) block else { IDENTIFIER = expression ,; } while ( IDENTIFIER <= INT ) 
+168,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s99 s106 s43 s15 s33 s50 s74 ,# declaration declaration declareFunction { statement statement statement if ( expression ) block else { IDENTIFIER = expression ; ,} while ( IDENTIFIER <= INT ) 
+169,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s99 s106 s43 ,# declaration declaration declareFunction { statement statement statement if ( expression ) block else { ,} while ( IDENTIFIER <= INT ) 
+170,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s99 s106 s43 s25 ,# declaration declaration declareFunction { statement statement statement if ( expression ) block else { assignStatement ,} while ( IDENTIFIER <= INT ) 
+171,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s99 s106 s43 ,# declaration declaration declareFunction { statement statement statement if ( expression ) block else { ,} while ( IDENTIFIER <= INT ) 
+172,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s99 s106 s43 s24 ,# declaration declaration declareFunction { statement statement statement if ( expression ) block else { statement ,} while ( IDENTIFIER <= INT ) 
+173,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s99 s106 s43 s24 s46 ,# declaration declaration declareFunction { statement statement statement if ( expression ) block else { statement statementChain ,} while ( IDENTIFIER <= INT ) 
+174,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s99 s106 s43 ,# declaration declaration declareFunction { statement statement statement if ( expression ) block else { ,} while ( IDENTIFIER <= INT ) 
+175,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s99 s106 s43 s72 ,# declaration declaration declareFunction { statement statement statement if ( expression ) block else { statementChain ,} while ( IDENTIFIER <= INT ) 
+176,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s99 s106 s43 s72 s88 ,# declaration declaration declareFunction { statement statement statement if ( expression ) block else { statementChain } ,while ( IDENTIFIER <= INT ) 
+177,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s99 s106 ,# declaration declaration declareFunction { statement statement statement if ( expression ) block else ,while ( IDENTIFIER <= INT ) 
+178,s0 s6 s6 s8 s11 s24 s24 s24 s18 s41 s70 s87 s99 s106 s109 ,# declaration declaration declareFunction { statement statement statement if ( expression ) block else block ,while ( IDENTIFIER <= INT ) 
+179,s0 s6 s6 s8 s11 s24 s24 s24 ,# declaration declaration declareFunction { statement statement statement ,while ( IDENTIFIER <= INT ) 
+180,s0 s6 s6 s8 s11 s24 s24 s24 s28 ,# declaration declaration declareFunction { statement statement statement ifStatement ,while ( IDENTIFIER <= INT ) 
+181,s0 s6 s6 s8 s11 s24 s24 s24 ,# declaration declaration declareFunction { statement statement statement ,while ( IDENTIFIER <= INT ) 
+182,s0 s6 s6 s8 s11 s24 s24 s24 s24 ,# declaration declaration declareFunction { statement statement statement statement ,while ( IDENTIFIER <= INT ) 
+183,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 ,# declaration declaration declareFunction { statement statement statement statement while ,( IDENTIFIER <= INT ) 
+184,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 ,# declaration declaration declareFunction { statement statement statement statement while ( ,IDENTIFIER <= INT ) 
+185,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s52 ,# declaration declaration declareFunction { statement statement statement statement while ( IDENTIFIER ,<= INT ) 
+186,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 ,# declaration declaration declareFunction { statement statement statement statement while ( ,<= INT ) 
+187,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s56 ,# declaration declaration declareFunction { statement statement statement statement while ( primaryExpression ,<= INT ) 
+188,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s56 s63 ,# declaration declaration declareFunction { statement statement statement statement while ( primaryExpression <= ,INT ) { 
+189,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s56 ,# declaration declaration declareFunction { statement statement statement statement while ( primaryExpression ,INT ) { 
+190,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s56 s84 ,# declaration declaration declareFunction { statement statement statement statement while ( primaryExpression operator ,INT ) { 
+191,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s56 s84 s54 ,# declaration declaration declareFunction { statement statement statement statement while ( primaryExpression operator INT ,) { IDENTIFIER = IDENTIFIER * INT ; 
+192,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s56 s84 ,# declaration declaration declareFunction { statement statement statement statement while ( primaryExpression operator ,) { IDENTIFIER = IDENTIFIER * INT ; 
+193,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s56 s84 s56 ,# declaration declaration declareFunction { statement statement statement statement while ( primaryExpression operator primaryExpression ,) { IDENTIFIER = IDENTIFIER * INT ; 
+194,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s56 s84 ,# declaration declaration declareFunction { statement statement statement statement while ( primaryExpression operator ,) { IDENTIFIER = IDENTIFIER * INT ; 
+195,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s56 s84 s96 ,# declaration declaration declareFunction { statement statement statement statement while ( primaryExpression operator expression ,) { IDENTIFIER = IDENTIFIER * INT ; 
+196,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 ,# declaration declaration declareFunction { statement statement statement statement while ( ,) { IDENTIFIER = IDENTIFIER * INT ; 
+197,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ,) { IDENTIFIER = IDENTIFIER * INT ; 
+198,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) ,{ IDENTIFIER = IDENTIFIER * INT ; 
+199,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 s43 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) { ,IDENTIFIER = IDENTIFIER * INT ; 
+200,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 s43 s15 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) { IDENTIFIER ,= IDENTIFIER * INT ; 
+201,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 s43 s15 s33 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) { IDENTIFIER = ,IDENTIFIER * INT ; 
+202,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 s43 s15 s33 s34 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) { IDENTIFIER = IDENTIFIER ,* INT ; 
+203,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 s43 s15 s33 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) { IDENTIFIER = ,* INT ; 
+204,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 s43 s15 s33 s39 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) { IDENTIFIER = primaryExpression ,* INT ; 
+205,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 s43 s15 s33 s39 s60 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) { IDENTIFIER = primaryExpression * ,INT ; } 
+206,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 s43 s15 s33 s39 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) { IDENTIFIER = primaryExpression ,INT ; } 
+207,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 s43 s15 s33 s39 s68 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) { IDENTIFIER = primaryExpression operator ,INT ; } 
+208,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 s43 s15 s33 s39 s68 s37 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) { IDENTIFIER = primaryExpression operator INT ,; } return IDENTIFIER ; 
+209,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 s43 s15 s33 s39 s68 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) { IDENTIFIER = primaryExpression operator ,; } return IDENTIFIER ; 
+210,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 s43 s15 s33 s39 s68 s39 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) { IDENTIFIER = primaryExpression operator primaryExpression ,; } return IDENTIFIER ; 
+211,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 s43 s15 s33 s39 s68 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) { IDENTIFIER = primaryExpression operator ,; } return IDENTIFIER ; 
+212,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 s43 s15 s33 s39 s68 s85 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) { IDENTIFIER = primaryExpression operator expression ,; } return IDENTIFIER ; 
+213,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 s43 s15 s33 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) { IDENTIFIER = ,; } return IDENTIFIER ; 
+214,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 s43 s15 s33 s50 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) { IDENTIFIER = expression ,; } return IDENTIFIER ; 
+215,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 s43 s15 s33 s50 s74 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) { IDENTIFIER = expression ; ,} return IDENTIFIER ; 
+216,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 s43 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) { ,} return IDENTIFIER ; 
+217,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 s43 s25 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) { assignStatement ,} return IDENTIFIER ; 
+218,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 s43 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) { ,} return IDENTIFIER ; 
+219,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 s43 s24 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) { statement ,} return IDENTIFIER ; 
+220,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 s43 s24 s46 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) { statement statementChain ,} return IDENTIFIER ; 
+221,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 s43 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) { ,} return IDENTIFIER ; 
+222,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 s43 s72 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) { statementChain ,} return IDENTIFIER ; 
+223,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 s43 s72 s88 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) { statementChain } ,return IDENTIFIER ; 
+224,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) ,return IDENTIFIER ; 
+225,s0 s6 s6 s8 s11 s24 s24 s24 s24 s17 s40 s69 s86 s97 ,# declaration declaration declareFunction { statement statement statement statement while ( expression ) block ,return IDENTIFIER ; 
+226,s0 s6 s6 s8 s11 s24 s24 s24 s24 ,# declaration declaration declareFunction { statement statement statement statement ,return IDENTIFIER ; 
+227,s0 s6 s6 s8 s11 s24 s24 s24 s24 s27 ,# declaration declaration declareFunction { statement statement statement statement iterStatement ,return IDENTIFIER ; 
+228,s0 s6 s6 s8 s11 s24 s24 s24 s24 ,# declaration declaration declareFunction { statement statement statement statement ,return IDENTIFIER ; 
+229,s0 s6 s6 s8 s11 s24 s24 s24 s24 s24 ,# declaration declaration declareFunction { statement statement statement statement statement ,return IDENTIFIER ; 
+230,s0 s6 s6 s8 s11 s24 s24 s24 s24 s24 s16 ,# declaration declaration declareFunction { statement statement statement statement statement return ,IDENTIFIER ; } 
+231,s0 s6 s6 s8 s11 s24 s24 s24 s24 s24 s16 s34 ,# declaration declaration declareFunction { statement statement statement statement statement return IDENTIFIER ,; } int IDENTIFIER ( int IDENTIFIER ) 
+232,s0 s6 s6 s8 s11 s24 s24 s24 s24 s24 s16 ,# declaration declaration declareFunction { statement statement statement statement statement return ,; } int IDENTIFIER ( int IDENTIFIER ) 
+233,s0 s6 s6 s8 s11 s24 s24 s24 s24 s24 s16 s39 ,# declaration declaration declareFunction { statement statement statement statement statement return primaryExpression ,; } int IDENTIFIER ( int IDENTIFIER ) 
+234,s0 s6 s6 s8 s11 s24 s24 s24 s24 s24 s16 ,# declaration declaration declareFunction { statement statement statement statement statement return ,; } int IDENTIFIER ( int IDENTIFIER ) 
+235,s0 s6 s6 s8 s11 s24 s24 s24 s24 s24 s16 s38 ,# declaration declaration declareFunction { statement statement statement statement statement return expression ,; } int IDENTIFIER ( int IDENTIFIER ) 
+236,s0 s6 s6 s8 s11 s24 s24 s24 s24 s24 s16 s38 s57 ,# declaration declaration declareFunction { statement statement statement statement statement return expression ; ,} int IDENTIFIER ( int IDENTIFIER ) 
+237,s0 s6 s6 s8 s11 s24 s24 s24 s24 s24 ,# declaration declaration declareFunction { statement statement statement statement statement ,} int IDENTIFIER ( int IDENTIFIER ) 
+238,s0 s6 s6 s8 s11 s24 s24 s24 s24 s24 s26 ,# declaration declaration declareFunction { statement statement statement statement statement returnStatement ,} int IDENTIFIER ( int IDENTIFIER ) 
+239,s0 s6 s6 s8 s11 s24 s24 s24 s24 s24 ,# declaration declaration declareFunction { statement statement statement statement statement ,} int IDENTIFIER ( int IDENTIFIER ) 
+240,s0 s6 s6 s8 s11 s24 s24 s24 s24 s24 s24 ,# declaration declaration declareFunction { statement statement statement statement statement statement ,} int IDENTIFIER ( int IDENTIFIER ) 
+241,s0 s6 s6 s8 s11 s24 s24 s24 s24 s24 s24 s46 ,# declaration declaration declareFunction { statement statement statement statement statement statement statementChain ,} int IDENTIFIER ( int IDENTIFIER ) 
+242,s0 s6 s6 s8 s11 s24 s24 s24 s24 s24 ,# declaration declaration declareFunction { statement statement statement statement statement ,} int IDENTIFIER ( int IDENTIFIER ) 
+243,s0 s6 s6 s8 s11 s24 s24 s24 s24 s24 s46 ,# declaration declaration declareFunction { statement statement statement statement statement statementChain ,} int IDENTIFIER ( int IDENTIFIER ) 
+244,s0 s6 s6 s8 s11 s24 s24 s24 s24 ,# declaration declaration declareFunction { statement statement statement statement ,} int IDENTIFIER ( int IDENTIFIER ) 
+245,s0 s6 s6 s8 s11 s24 s24 s24 s24 s46 ,# declaration declaration declareFunction { statement statement statement statement statementChain ,} int IDENTIFIER ( int IDENTIFIER ) 
+246,s0 s6 s6 s8 s11 s24 s24 s24 ,# declaration declaration declareFunction { statement statement statement ,} int IDENTIFIER ( int IDENTIFIER ) 
+247,s0 s6 s6 s8 s11 s24 s24 s24 s46 ,# declaration declaration declareFunction { statement statement statement statementChain ,} int IDENTIFIER ( int IDENTIFIER ) 
+248,s0 s6 s6 s8 s11 s24 s24 ,# declaration declaration declareFunction { statement statement ,} int IDENTIFIER ( int IDENTIFIER ) 
+249,s0 s6 s6 s8 s11 s24 s24 s46 ,# declaration declaration declareFunction { statement statement statementChain ,} int IDENTIFIER ( int IDENTIFIER ) 
+250,s0 s6 s6 s8 s11 s24 ,# declaration declaration declareFunction { statement ,} int IDENTIFIER ( int IDENTIFIER ) 
+251,s0 s6 s6 s8 s11 s24 s46 ,# declaration declaration declareFunction { statement statementChain ,} int IDENTIFIER ( int IDENTIFIER ) 
+252,s0 s6 s6 s8 s11 ,# declaration declaration declareFunction { ,} int IDENTIFIER ( int IDENTIFIER ) 
+253,s0 s6 s6 s8 s11 s23 ,# declaration declaration declareFunction { statementChain ,} int IDENTIFIER ( int IDENTIFIER ) 
+254,s0 s6 s6 s8 s11 s23 s45 ,# declaration declaration declareFunction { statementChain } ,int IDENTIFIER ( int IDENTIFIER ) 
+255,s0 s6 s6 s8 ,# declaration declaration declareFunction ,int IDENTIFIER ( int IDENTIFIER ) 
+256,s0 s6 s6 s8 s12 ,# declaration declaration declareFunction block ,int IDENTIFIER ( int IDENTIFIER ) 
+257,s0 s6 s6 ,# declaration declaration ,int IDENTIFIER ( int IDENTIFIER ) 
+258,s0 s6 s6 s7 ,# declaration declaration completeFunction ,int IDENTIFIER ( int IDENTIFIER ) 
+259,s0 s6 s6 ,# declaration declaration ,int IDENTIFIER ( int IDENTIFIER ) 
+260,s0 s6 s6 s6 ,# declaration declaration declaration ,int IDENTIFIER ( int IDENTIFIER ) 
+261,s0 s6 s6 s6 s1 ,# declaration declaration declaration int ,IDENTIFIER ( int IDENTIFIER ) 
+262,s0 s6 s6 s6 ,# declaration declaration declaration ,IDENTIFIER ( int IDENTIFIER ) 
+263,s0 s6 s6 s6 s5 ,# declaration declaration declaration typeSpecifier ,IDENTIFIER ( int IDENTIFIER ) 
+264,s0 s6 s6 s6 s5 s9 ,# declaration declaration declaration typeSpecifier IDENTIFIER ,( int IDENTIFIER ) 
+265,s0 s6 s6 s6 s5 s9 s14 ,# declaration declaration declaration typeSpecifier IDENTIFIER ( ,int IDENTIFIER ) 
+266,s0 s6 s6 s6 s5 s9 s14 s1 ,# declaration declaration declaration typeSpecifier IDENTIFIER ( int ,IDENTIFIER ) { 
+267,s0 s6 s6 s6 s5 s9 s14 ,# declaration declaration declaration typeSpecifier IDENTIFIER ( ,IDENTIFIER ) { 
+268,s0 s6 s6 s6 s5 s9 s14 s30 ,# declaration declaration declaration typeSpecifier IDENTIFIER ( typeSpecifier ,IDENTIFIER ) { 
+269,s0 s6 s6 s6 s5 s9 s14 s30 s47 ,# declaration declaration declaration typeSpecifier IDENTIFIER ( typeSpecifier IDENTIFIER ,) { IDENTIFIER = IDENTIFIER + INT ; 
+270,s0 s6 s6 s6 s5 s9 s14 ,# declaration declaration declaration typeSpecifier IDENTIFIER ( ,) { IDENTIFIER = IDENTIFIER + INT ; 
+271,s0 s6 s6 s6 s5 s9 s14 s32 ,# declaration declaration declaration typeSpecifier IDENTIFIER ( para ,) { IDENTIFIER = IDENTIFIER + INT ; 
+272,s0 s6 s6 s6 s5 s9 s14 ,# declaration declaration declaration typeSpecifier IDENTIFIER ( ,) { IDENTIFIER = IDENTIFIER + INT ; 
+273,s0 s6 s6 s6 s5 s9 s14 s31 ,# declaration declaration declaration typeSpecifier IDENTIFIER ( formalParaList ,) { IDENTIFIER = IDENTIFIER + INT ; 
+274,s0 s6 s6 s6 s5 s9 s14 s31 s48 ,# declaration declaration declaration typeSpecifier IDENTIFIER ( formalParaList ) ,{ IDENTIFIER = IDENTIFIER + INT ; 
+275,s0 s6 s6 s6 ,# declaration declaration declaration ,{ IDENTIFIER = IDENTIFIER + INT ; 
+276,s0 s6 s6 s6 s8 ,# declaration declaration declaration declareFunction ,{ IDENTIFIER = IDENTIFIER + INT ; 
+277,s0 s6 s6 s6 s8 s11 ,# declaration declaration declaration declareFunction { ,IDENTIFIER = IDENTIFIER + INT ; 
+278,s0 s6 s6 s6 s8 s11 s15 ,# declaration declaration declaration declareFunction { IDENTIFIER ,= IDENTIFIER + INT ; 
+279,s0 s6 s6 s6 s8 s11 s15 s33 ,# declaration declaration declaration declareFunction { IDENTIFIER = ,IDENTIFIER + INT ; 
+280,s0 s6 s6 s6 s8 s11 s15 s33 s34 ,# declaration declaration declaration declareFunction { IDENTIFIER = IDENTIFIER ,+ INT ; 
+281,s0 s6 s6 s6 s8 s11 s15 s33 ,# declaration declaration declaration declareFunction { IDENTIFIER = ,+ INT ; 
+282,s0 s6 s6 s6 s8 s11 s15 s33 s39 ,# declaration declaration declaration declareFunction { IDENTIFIER = primaryExpression ,+ INT ; 
+283,s0 s6 s6 s6 s8 s11 s15 s33 s39 s58 ,# declaration declaration declaration declareFunction { IDENTIFIER = primaryExpression + ,INT ; return IDENTIFIER * INT ; 
+284,s0 s6 s6 s6 s8 s11 s15 s33 s39 ,# declaration declaration declaration declareFunction { IDENTIFIER = primaryExpression ,INT ; return IDENTIFIER * INT ; 
+285,s0 s6 s6 s6 s8 s11 s15 s33 s39 s68 ,# declaration declaration declaration declareFunction { IDENTIFIER = primaryExpression operator ,INT ; return IDENTIFIER * INT ; 
+286,s0 s6 s6 s6 s8 s11 s15 s33 s39 s68 s37 ,# declaration declaration declaration declareFunction { IDENTIFIER = primaryExpression operator INT ,; return IDENTIFIER * INT ; 
+287,s0 s6 s6 s6 s8 s11 s15 s33 s39 s68 ,# declaration declaration declaration declareFunction { IDENTIFIER = primaryExpression operator ,; return IDENTIFIER * INT ; 
+288,s0 s6 s6 s6 s8 s11 s15 s33 s39 s68 s39 ,# declaration declaration declaration declareFunction { IDENTIFIER = primaryExpression operator primaryExpression ,; return IDENTIFIER * INT ; 
+289,s0 s6 s6 s6 s8 s11 s15 s33 s39 s68 ,# declaration declaration declaration declareFunction { IDENTIFIER = primaryExpression operator ,; return IDENTIFIER * INT ; 
+290,s0 s6 s6 s6 s8 s11 s15 s33 s39 s68 s85 ,# declaration declaration declaration declareFunction { IDENTIFIER = primaryExpression operator expression ,; return IDENTIFIER * INT ; 
+291,s0 s6 s6 s6 s8 s11 s15 s33 ,# declaration declaration declaration declareFunction { IDENTIFIER = ,; return IDENTIFIER * INT ; 
+292,s0 s6 s6 s6 s8 s11 s15 s33 s50 ,# declaration declaration declaration declareFunction { IDENTIFIER = expression ,; return IDENTIFIER * INT ; 
+293,s0 s6 s6 s6 s8 s11 s15 s33 s50 s74 ,# declaration declaration declaration declareFunction { IDENTIFIER = expression ; ,return IDENTIFIER * INT ; 
+294,s0 s6 s6 s6 s8 s11 ,# declaration declaration declaration declareFunction { ,return IDENTIFIER * INT ; 
+295,s0 s6 s6 s6 s8 s11 s25 ,# declaration declaration declaration declareFunction { assignStatement ,return IDENTIFIER * INT ; 
+296,s0 s6 s6 s6 s8 s11 ,# declaration declaration declaration declareFunction { ,return IDENTIFIER * INT ; 
+297,s0 s6 s6 s6 s8 s11 s24 ,# declaration declaration declaration declareFunction { statement ,return IDENTIFIER * INT ; 
+298,s0 s6 s6 s6 s8 s11 s24 s16 ,# declaration declaration declaration declareFunction { statement return ,IDENTIFIER * INT ; 
+299,s0 s6 s6 s6 s8 s11 s24 s16 s34 ,# declaration declaration declaration declareFunction { statement return IDENTIFIER ,* INT ; 
+300,s0 s6 s6 s6 s8 s11 s24 s16 ,# declaration declaration declaration declareFunction { statement return ,* INT ; 
+301,s0 s6 s6 s6 s8 s11 s24 s16 s39 ,# declaration declaration declaration declareFunction { statement return primaryExpression ,* INT ; 
+302,s0 s6 s6 s6 s8 s11 s24 s16 s39 s60 ,# declaration declaration declaration declareFunction { statement return primaryExpression * ,INT ; } 
+303,s0 s6 s6 s6 s8 s11 s24 s16 s39 ,# declaration declaration declaration declareFunction { statement return primaryExpression ,INT ; } 
+304,s0 s6 s6 s6 s8 s11 s24 s16 s39 s68 ,# declaration declaration declaration declareFunction { statement return primaryExpression operator ,INT ; } 
+305,s0 s6 s6 s6 s8 s11 s24 s16 s39 s68 s37 ,# declaration declaration declaration declareFunction { statement return primaryExpression operator INT ,; } # 
+306,s0 s6 s6 s6 s8 s11 s24 s16 s39 s68 ,# declaration declaration declaration declareFunction { statement return primaryExpression operator ,; } # 
+307,s0 s6 s6 s6 s8 s11 s24 s16 s39 s68 s39 ,# declaration declaration declaration declareFunction { statement return primaryExpression operator primaryExpression ,; } # 
+308,s0 s6 s6 s6 s8 s11 s24 s16 s39 s68 ,# declaration declaration declaration declareFunction { statement return primaryExpression operator ,; } # 
+309,s0 s6 s6 s6 s8 s11 s24 s16 s39 s68 s85 ,# declaration declaration declaration declareFunction { statement return primaryExpression operator expression ,; } # 
+310,s0 s6 s6 s6 s8 s11 s24 s16 ,# declaration declaration declaration declareFunction { statement return ,; } # 
+311,s0 s6 s6 s6 s8 s11 s24 s16 s38 ,# declaration declaration declaration declareFunction { statement return expression ,; } # 
+312,s0 s6 s6 s6 s8 s11 s24 s16 s38 s57 ,# declaration declaration declaration declareFunction { statement return expression ; ,} # void IDENTIFIER ( void ) 
+313,s0 s6 s6 s6 s8 s11 s24 ,# declaration declaration declaration declareFunction { statement ,} # void IDENTIFIER ( void ) 
+314,s0 s6 s6 s6 s8 s11 s24 s26 ,# declaration declaration declaration declareFunction { statement returnStatement ,} # void IDENTIFIER ( void ) 
+315,s0 s6 s6 s6 s8 s11 s24 ,# declaration declaration declaration declareFunction { statement ,} # void IDENTIFIER ( void ) 
+316,s0 s6 s6 s6 s8 s11 s24 s24 ,# declaration declaration declaration declareFunction { statement statement ,} # void IDENTIFIER ( void ) 
+317,s0 s6 s6 s6 s8 s11 s24 s24 s46 ,# declaration declaration declaration declareFunction { statement statement statementChain ,} # void IDENTIFIER ( void ) 
+318,s0 s6 s6 s6 s8 s11 s24 ,# declaration declaration declaration declareFunction { statement ,} # void IDENTIFIER ( void ) 
+319,s0 s6 s6 s6 s8 s11 s24 s46 ,# declaration declaration declaration declareFunction { statement statementChain ,} # void IDENTIFIER ( void ) 
+320,s0 s6 s6 s6 s8 s11 ,# declaration declaration declaration declareFunction { ,} # void IDENTIFIER ( void ) 
+321,s0 s6 s6 s6 s8 s11 s23 ,# declaration declaration declaration declareFunction { statementChain ,} # void IDENTIFIER ( void ) 
+322,s0 s6 s6 s6 s8 s11 s23 s45 ,# declaration declaration declaration declareFunction { statementChain } ,# void IDENTIFIER ( void ) 
+323,s0 s6 s6 s6 s8 ,# declaration declaration declaration declareFunction ,# void IDENTIFIER ( void ) 
+324,s0 s6 s6 s6 s8 s12 ,# declaration declaration declaration declareFunction block ,# void IDENTIFIER ( void ) 
+325,s0 s6 s6 s6 ,# declaration declaration declaration ,# void IDENTIFIER ( void ) 
+326,s0 s6 s6 s6 s7 ,# declaration declaration declaration completeFunction ,# void IDENTIFIER ( void ) 
+327,s0 s6 s6 s6 ,# declaration declaration declaration ,# void IDENTIFIER ( void ) 
+328,s0 s6 s6 s6 s6 ,# declaration declaration declaration declaration ,# void IDENTIFIER ( void ) 
+329,s0 s6 s6 s6 s6 s10 ,# declaration declaration declaration declaration declarationChain ,# void IDENTIFIER ( void ) 
+330,s0 s6 s6 s6 ,# declaration declaration declaration ,# void IDENTIFIER ( void ) 
+331,s0 s6 s6 s6 s10 ,# declaration declaration declaration declarationChain ,# void IDENTIFIER ( void ) 
+332,s0 s6 s6 ,# declaration declaration ,# void IDENTIFIER ( void ) 
+333,s0 s6 s6 s10 ,# declaration declaration declarationChain ,# void IDENTIFIER ( void ) 
+334,s0 s6 ,# declaration ,# void IDENTIFIER ( void ) 
+335,s0 s6 s10 ,# declaration declarationChain ,# void IDENTIFIER ( void ) 
+336,s0 ,# ,# void IDENTIFIER ( void ) 
+337,s0 s4 ,# declarationChain ,# void IDENTIFIER ( void ) 
