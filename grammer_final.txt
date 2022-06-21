@@ -11,7 +11,12 @@ typeSpecifier
 	#
 declaration
 	typeSpecifier id ;
+	typeSpecifier dimList ;
 	completeFunction
+	#
+dimList
+	id [ expression ]
+	dimList [ expression ]
 	#
 completeFunction
 	declareFunction block
